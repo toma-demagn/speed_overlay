@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y ffmpeg && apt-get clean
 
 WORKDIR /app
 
-COPY add_speed_overlay.py .
+COPY main.py .
 
 RUN pip install gpxpy geopy tqdm
 
